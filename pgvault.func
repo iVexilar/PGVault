@@ -443,7 +443,7 @@ EOF
   rm -rf "/opt/appdata/${program_var}/*"
   chown -R 1000:1000 "/opt/appdata/${program_var}"
   chmod -R 775 "/opt/appdata/${program_var}"
-  tar -C /opt/appdata/${program_var} -xvf ${tarlocation}/${program_var}.tar
+  tar -C /opt/appdata/${program_var} -xvf ${tarlocation}/${program_var}.tar >/dev/null
   chown -R 1000:1000 "/opt/appdata/${program_var}"
   chmod -R 775 "/opt/appdata/${program_var}"
 
